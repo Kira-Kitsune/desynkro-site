@@ -9,7 +9,7 @@ const App: Component = () => {
     return (
         <>
             <Navbar />
-            <div class="fixed z-[100] flex h-8 w-full items-center justify-center bg-yellow-400 text-center text-xl">
+            <div class="fixed z-[45] flex h-8 w-full items-center justify-center bg-yellow-400 text-center text-xl">
                 Website is currently in Beta!
             </div>
             <Routes>

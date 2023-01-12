@@ -13,12 +13,11 @@ module.exports = {
             colors: {
                 nav: '#00202B',
             },
-            backgroundImage: {
-                title: "url('./src/assets/images/title_bg.png')",
-                socials: "url('./src/assets/images/socials_bg.png')",
-            },
             aspectRatio: {
                 photo: '4 / 6',
+            },
+            backgroundImage: {
+                title: 'url("./assets/images/title_bg.png")',
             },
         },
     },
