@@ -32,7 +32,7 @@ const NavDropdown: Component<Props> = () => {
                 />
                 <TextButton
                     href="https://discord.gg/invite/qptZkCj"
-                    text="DISOCRD"
+                    text="DISCORD"
                 />
             </div>
         </div>
