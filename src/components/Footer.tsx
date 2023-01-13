@@ -2,13 +2,9 @@ import type { Component } from 'solid-js';
 import {
     FaBrandsDiscord,
     FaBrandsTwitter,
-    FaSolidGlobe,
-    FaBrandsPaypal,
     FaBrandsTwitch,
     FaBrandsYoutube,
-    FaSolidShirt,
 } from 'solid-icons/fa';
-import { SiKofi } from 'solid-icons/si';
 import TextButton from './TextButton';
 import PFP from '../assets/images/logo_01.png';
 import IconButton from './IconButton';
