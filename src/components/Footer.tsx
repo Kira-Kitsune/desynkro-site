@@ -53,48 +53,4 @@ const Footer: Component = () => {
     );
 };
 
-{
-    /* <SocialTitle text="Socials" />
-                <div class="mb-8 grid grid-cols-2 gap-x-8 gap-y-0 md:mb-16  md:grid-cols-4 md:gap-32">
-                    <SocialIcon
-                        href="https://youtube.com/DeSynkro"
-                        Icon={FaBrandsYoutube}
-                        text="YouTube"
-                    />
-                    <SocialIcon
-                        href="https://twitch.tv/DeSynkro"
-                        Icon={FaBrandsTwitch}
-                        text="Twitch"
-                    />
-                    <SocialIcon
-                        href="https://twitter.com/DeSynkro"
-                        Icon={FaBrandsTwitter}
-                        text="Twitter"
-                    />
-                    <SocialIcon
-                        href="https://discord.gg/invite/qptZkCj"
-                        Icon={FaBrandsDiscord}
-                        text="Discord"
-                    />
-                </div>
-                <SocialTitle text="Support Me" />
-                <div class="grid grid-cols-2 gap-x-8 gap-y-0 md:mb-8 md:grid-cols-3 md:gap-32">
-                    <SocialIcon
-                        href="https://store.streamelements.com/desynkro"
-                        Icon={FaSolidShirt}
-                        text="Merch"
-                    />
-                    <SocialIcon
-                        href="https://paypal.me/iagorosa"
-                        Icon={FaBrandsPaypal}
-                        text="PayPal"
-                    />
-                    <SocialIcon
-                        href="https://ko-fi.com/desynkro"
-                        Icon={SiKofi}
-                        text="Ko-fi"
-                    />
-                </div> */
-}
-
 export default Footer;
