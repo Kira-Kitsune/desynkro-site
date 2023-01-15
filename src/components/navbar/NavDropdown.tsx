@@ -1,10 +1,13 @@
-import { Component, createSignal } from 'solid-js';
+import { Component, For, createSignal } from 'solid-js';
 import TextButton from '../TextButton';
 import NavButtton from './NavButton';
+import { Social } from '../../utils/types';
 
-type Props = {};
+type Props = {
+    socials: Social[];
+};
 
-const NavDropdown: Component<Props> = () => {
+const NavDropdown: Component<Props> = ({ socials }) => {
     const [isDropdownOpen, setDropdownOpen] = createSignal(false);
 
     function dropdownToggleHandler() {
@@ -21,19 +24,11 @@ const NavDropdown: Component<Props> = () => {
                     isDropdownOpen() ? 'touch-screen' : 'hidden'
                 }`}
             >
-                <TextButton
-                    href="https://youtube.com/DeSynkro"
-                    text="YOUTUBE"
-                />
-                <TextButton href="https://twitch.com/DeSynkro" text="TWITCH" />
-                <TextButton
-                    href="https://twitter.com/DeSynkro"
-                    text="TWITTER"
-                />
-                <TextButton
-                    href="https://discord.gg/invite/qptZkCj"
-                    text="DISCORD"
-                />
+                <For each={socials}>
+                    {({ text, href }) => (
+                        <TextButton text={text.toUpperCase()} href={href} />
+                    )}
+                </For>
             </div>
         </div>
     );
