@@ -1,14 +1,14 @@
 import { Photo } from '../utils/types';
-import Sample_01 from '../assets/portfolio/sample/DS_05442-Edit.jpg';
-import Sample_02 from '../assets/portfolio/sample/DS_02279.jpg';
-import Sample_03 from '../assets/portfolio/sample/DS_03586.jpg';
-import Sample_04 from '../assets/portfolio/sample/DS_09311-Edit.jpg';
-import Sample_05 from '../assets/portfolio/sample/DS_09250-Edit.jpg';
-import Sample_06 from '../assets/portfolio/sample/DS_09166.jpg';
-import Sample_07 from '../assets/portfolio/sample/DS_09435-Edit.jpg';
-import Sample_08 from '../assets/portfolio/sample/IMG_1282-Edit.jpg';
-import Sample_09 from '../assets/portfolio/sample/HEL07323.jpg';
-import Sample_10 from '../assets/portfolio/sample/Doeker_Merch-37.jpg';
+import Sample_01 from '../assets/portfolio/sample/Daena.jpg';
+import Sample_02 from '../assets/portfolio/sample/Iago.jpg';
+import Sample_03 from '../assets/portfolio/sample/Luna.jpg';
+import Sample_04 from '../assets/portfolio/sample/Carla.jpg';
+import Sample_05 from '../assets/portfolio/sample/Walter.jpg';
+import Sample_06 from '../assets/portfolio/sample/Qwerty.jpg';
+import Sample_07 from '../assets/portfolio/sample/Jade.jpg';
+import Sample_08 from '../assets/portfolio/sample/Iago_Deku.jpg';
+import Sample_09 from '../assets/portfolio/sample/Kat.jpg';
+import Sample_10 from '../assets/portfolio/sample/Doeker.jpg';
 
 export const SamplePortfolio: Photo[] = [
     {
