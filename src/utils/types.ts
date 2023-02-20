@@ -14,3 +14,21 @@ export type NavItem = {
     text: string;
     href: string;
 };
+
+export type ImgIconType = { text: string; href: string; src: string };
+
+export interface ReviewInterface {
+    author: string;
+    stars: number;
+    reviewText: string;
+    localGuide: boolean;
+}
+
+export type List = {
+    elements: string[];
+};
+
+export type Section = {
+    title: string;
+    textArea: (string | List | ReviewInterface)[];
+};

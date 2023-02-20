@@ -18,7 +18,7 @@ const PortfolioItem: Component<Props> = ({ src, alt, sample, focused }) => {
             <img
                 class={`w-64 ${
                     sample && 'lg:last:hidden xl:last:block'
-                } pointer-events-none aspect-photo object-contain `}
+                } pointer-events-none aspect-photo object-contain`}
                 src={src}
                 alt={alt}
             />

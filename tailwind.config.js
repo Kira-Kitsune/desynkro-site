@@ -19,6 +19,12 @@ module.exports = {
             backgroundImage: {
                 title: 'url("./assets/images/title_bg.png")',
             },
+            transitionDuration: {
+                slider: '1000ms',
+            },
+            transitionTimingFunction: {
+                slider: 'ease',
+            },
         },
     },
     plugins: [],
