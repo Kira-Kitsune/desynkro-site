@@ -56,7 +56,7 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
     const list = sections[1].textArea[1] as List;
 
     return (
-        <div class="flex w-full items-center justify-center gap-12 lg:w-10/12">
+        <div class="flex w-full items-center justify-center gap-4 lg:w-10/12 lg:gap-12">
             <FaSolidCircleArrowLeft
                 class="cursor-pointer"
                 onClick={onPrevious}
@@ -72,30 +72,23 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
                 >
                     {sections.map(({ title, textArea }, index) => (
                         <div class="inline-flex h-full w-full flex-col items-center justify-center p-4 align-middle">
+                            <h2 class="mb-4 h-full whitespace-normal text-center text-4xl font-bold">
+                                {title}
+                            </h2>
                             <Show
                                 when={typeof textArea[0] === 'string'}
                                 fallback={
-                                    <>
-                                        <h2 class="mb-4 h-full w-full whitespace-normal text-center text-4xl  font-bold">
-                                            {title}
-                                        </h2>
-                                        <div class="flex w-full items-start justify-evenly gap-4 max-md:flex-col">
-                                            <For
-                                                each={
-                                                    textArea as ReviewInterface[]
-                                                }
-                                            >
-                                                {(review, idx) => (
-                                                    <Review review={review} />
-                                                )}
-                                            </For>
-                                        </div>
-                                    </>
+                                    <div class="flex w-full items-start justify-evenly gap-4 max-md:flex-col">
+                                        <For
+                                            each={textArea as ReviewInterface[]}
+                                        >
+                                            {(review, idx) => (
+                                                <Review review={review} />
+                                            )}
+                                        </For>
+                                    </div>
                                 }
                             >
-                                <h2 class="mb-4 h-full whitespace-normal text-center text-4xl  font-bold">
-                                    {title}
-                                </h2>
                                 <Show
                                     when={typeof textArea[1] === 'object'}
                                     fallback={
