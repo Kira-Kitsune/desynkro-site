@@ -23,7 +23,7 @@ type Props = {
 const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
     const [section, setSection] = createSignal(0);
 
-    let timer: number;
+    let timer;
     // Set the timer when it's loaded
     onMount(() => {
         timer = setInterval(onNext, timerSeconds * 1000);
@@ -56,7 +56,7 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
     const list = sections[1].textArea[1] as List;
 
     return (
-        <div class="flex w-full items-center justify-center gap-12 md:w-10/12">
+        <div class="flex w-full items-center justify-center gap-12 lg:w-10/12">
             <FaSolidCircleArrowLeft
                 class="cursor-pointer"
                 onClick={onPrevious}
@@ -99,12 +99,12 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
                                 <Show
                                     when={typeof textArea[1] === 'object'}
                                     fallback={
-                                        <p class="flex w-full items-center justify-center whitespace-pre-wrap font-sans text-2xl">
+                                        <p class="flex w-full items-center justify-center whitespace-pre-wrap font-sans text-2xl max-md:text-lg">
                                             {(textArea as string[]).join('\n')}
                                         </p>
                                     }
                                 >
-                                    <div class="flex w-full flex-col whitespace-pre-wrap font-sans text-2xl">
+                                    <div class="flex w-full flex-col whitespace-pre-wrap font-sans text-2xl max-md:text-lg">
                                         <For each={textArea}>
                                             {(text, idx) => (
                                                 <Show
@@ -130,7 +130,7 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
                                                         </ul>
                                                     }
                                                 >
-                                                    <p class="whitespace-pre-wrap font-sans text-2xl">
+                                                    <p class="w-full whitespace-pre-wrap font-sans text-2xl max-md:text-lg">
                                                         {text as string}
                                                     </p>
                                                 </Show>
