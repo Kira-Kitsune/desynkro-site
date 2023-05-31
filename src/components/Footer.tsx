@@ -20,23 +20,37 @@ const Footer: Component = () => {
                     </div>
                 </div>
                 <div class="m-2 flex h-full flex-col max-md:items-center md:flex-1">
-                    <span class="mb-2 text-xl font-bold">Support Me</span>
-                    <For each={Supports}>
-                        {({ text, href }) => (
-                            <TextButton text={text} href={href} />
-                        )}
-                    </For>
+                    <ul class="max-md:text-center">
+                        <li class="mb-2">
+                            <span class=" text-xl font-bold">Support Me</span>
+                        </li>
+                        <For each={Supports}>
+                            {({ text, href }) => (
+                                <li>
+                                    <TextButton text={text} href={href} />
+                                </li>
+                            )}
+                        </For>
+                    </ul>
                 </div>
                 <div class="m-2 flex h-full flex-col max-md:items-center md:flex-1">
-                    <span class="mb-2 text-xl font-bold">Projects</span>
-                    <TextButton
-                        text="DigiSonica"
-                        href="https://digisonica.desynkro.com"
-                    />
-                    <TextButton
-                        text="Photography Portfolio"
-                        href="/portfolio"
-                    />
+                    <ul class="max-md:text-center">
+                        <li class="mb-2">
+                            <span class="text-xl font-bold">Projects</span>
+                        </li>
+                        <li>
+                            <TextButton
+                                text="DigiSonica"
+                                href="https://digisonica.desynkro.com"
+                            />
+                        </li>
+                        <li>
+                            <TextButton
+                                text="Photography Portfolio"
+                                href="/portfolio"
+                            />
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="mt-8 flex w-1/2 items-center justify-between text-center max-md:flex-col">
