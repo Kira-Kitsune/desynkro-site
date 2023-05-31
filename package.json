@@ -1,6 +1,6 @@
 {
     "name": "desynkro-site",
-    "version": "2.2.2",
+    "version": "2.2.3",
     "description": "Website made by Kira for DeSynkro (Version 2)",
     "scripts": {
         "dev": "vite",
