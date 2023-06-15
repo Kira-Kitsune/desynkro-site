@@ -10,7 +10,12 @@ type Props = {
 const ImgIcon: Component<Props> = ({ src, href, text }) => {
     return (
         <A href={href} class="flex flex-col items-center justify-center gap-2">
-            <img class="w-[36rem] cursor-pointer" src={src} alt="img-icon" />
+            <img
+                class="w-[36rem] cursor-pointer"
+                src={src}
+                alt="img-icon"
+                loading="lazy"
+            />
             <span>{text}</span>
         </A>
     );

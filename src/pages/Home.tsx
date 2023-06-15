@@ -9,6 +9,7 @@ import { SamplePortfolio } from '../utils/portfolios';
 import SlideShowText from '../components/SlideShowText';
 import SlideShowPhoto from '../components/SlideShowPhoto';
 
+// TODO: WARNING! DON'T UPGRADE SOLID-ICONS PAST 1.0.4 ATM
 const Home: Component = () => {
     onMount(() => {
         document.title = 'DeSynkro | Home';
@@ -21,10 +22,20 @@ const Home: Component = () => {
     return (
         <div class="mt-[5.625rem] flex w-full flex-col text-xl text-neutral-100">
             <div class="z-30 flex items-center justify-evenly gap-8 bg-title bg-bottom py-28 shadow-desynkro max-md:flex-col md:gap-0 md:p-36">
-                <img src={DeSynkro} alt="DeSynkro" class="h-64 rounded-full" />
-                <img src={Title} alt="Title" class="h-48 md:h-64" />
+                <img
+                    src={DeSynkro}
+                    alt="DeSynkro"
+                    class="h-64 rounded-full"
+                    loading="lazy"
+                />
+                <img
+                    src={Title}
+                    alt="Title"
+                    class="h-48 md:h-64"
+                    loading="lazy"
+                />
             </div>
-            <div class="z-20 flex flex-col items-center bg-neutral-800 py-12 px-4 shadow-desynkro sm:p-16 sm:pt-12">
+            <div class="z-20 flex flex-col items-center bg-neutral-800 px-4 py-12 shadow-desynkro sm:p-16 sm:pt-12">
                 <SlideShowText sections={InfoText} timerSeconds={15} />
             </div>
             {src() && (
@@ -40,9 +51,9 @@ const Home: Component = () => {
                     <AiOutlineClose size={28} class="cursor-pointer" />
                 </div>
             )}
-            <div class="z-10 flex w-full flex-col items-center bg-gradient-to-b from-[#002b39] to-[#021c23] py-12 px-4 shadow-desynkro">
+            <div class="z-10 flex w-full flex-col items-center bg-gradient-to-b from-[#002b39] to-[#021c23] px-4 py-12 shadow-desynkro">
                 <h2 class="mb-8 text-4xl font-bold">Sample Portfolio</h2>
-                <div class="mb-12 hidden gap-y-8 gap-x-12 lg:grid lg:grid-cols-3 xl:grid-cols-5">
+                <div class="mb-12 hidden gap-x-12 gap-y-8 lg:grid lg:grid-cols-3 xl:grid-cols-5">
                     <For each={Sample()}>
                         {(src, index) => (
                             <Show

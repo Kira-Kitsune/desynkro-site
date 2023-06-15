@@ -17,8 +17,14 @@ const Navbar: Component = () => {
 
     return (
         <>
-            <header class="fixed top-0 bottom-0 z-50 flex h-[5.625rem] w-full items-center bg-nav px-10 shadow-desynkro">
-                <img src={Logo} height={76} width={76} alt="logo" />
+            <header class="fixed bottom-0 top-0 z-50 flex h-[5.625rem] w-full items-center bg-nav px-10 shadow-desynkro">
+                <img
+                    src={Logo}
+                    height={76}
+                    width={76}
+                    alt="logo"
+                    loading="lazy"
+                />
                 <nav class="m-auto flex content-center items-center pr-20 max-md:hidden">
                     <For each={NavItems}>
                         {({ text, href }) => (

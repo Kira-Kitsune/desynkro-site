@@ -135,7 +135,7 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
                         </div>
                     ))}
                 </div>
-                <div class="mt-12 flex justify-center gap-8">
+                <div class="mt-12 flex justify-center gap-8 ">
                     <For each={sections}>
                         {(_text, idx) => (
                             <Show

@@ -21,6 +21,7 @@ const PortfolioItem: Component<Props> = ({ src, alt, sample, focused }) => {
                 } pointer-events-none aspect-photo object-contain`}
                 src={src}
                 alt={alt}
+                loading="lazy"
             />
         </div>
     );

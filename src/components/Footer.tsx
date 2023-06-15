@@ -10,7 +10,7 @@ const Footer: Component = () => {
         <footer class="flex w-full flex-col items-center bg-neutral-800 py-8 font-sans text-white">
             <div class="flex h-full w-1/2 justify-start  max-md:flex-col">
                 <div class="flex h-full flex-col p-2 max-md:items-center md:flex-[2]">
-                    <img src={PFP} class="mb-6 w-24" />
+                    <img src={PFP} class="mb-6 w-24" loading="lazy" />
                     <div class="flex flex-row gap-4">
                         <For each={Socials}>
                             {({ Icon, href }) => (
