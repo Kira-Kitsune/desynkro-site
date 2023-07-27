@@ -9,7 +9,6 @@ import { SamplePortfolio } from '../utils/portfolios';
 import SlideShowText from '../components/SlideShowText';
 import SlideShowPhoto from '../components/SlideShowPhoto';
 
-// TODO: WARNING! DON'T UPGRADE SOLID-ICONS PAST 1.0.4 ATM
 const Home: Component = () => {
     onMount(() => {
         document.title = 'DeSynkro | Home';
@@ -38,7 +37,7 @@ const Home: Component = () => {
             <div class="z-20 flex flex-col items-center bg-neutral-800 px-4 py-12 shadow-desynkro sm:p-16 sm:pt-12">
                 <SlideShowText sections={InfoText} timerSeconds={15} />
             </div>
-            {src() && (
+            <Show when={src()}>
                 <div
                     class="fixed z-[200] flex h-[100vh] w-full scale-[2.5] items-center justify-center bg-black bg-opacity-40 pb-[2.8125rem]"
                     onClick={() => setSrc(undefined)}
@@ -48,9 +47,12 @@ const Home: Component = () => {
                         alt={`Sample_Portfolio_BIG`}
                         focused={true}
                     />
-                    <AiOutlineClose size={28} class="cursor-pointer" />
+                    <AiOutlineClose
+                        size={28}
+                        class="cursor-pointer fill-neutral-100"
+                    />
                 </div>
-            )}
+            </Show>
             <div class="z-10 flex w-full flex-col items-center bg-gradient-to-b from-[#002b39] to-[#021c23] px-4 py-12 shadow-desynkro">
                 <h2 class="mb-8 text-4xl font-bold">Sample Portfolio</h2>
                 <div class="mb-12 hidden gap-x-12 gap-y-8 lg:grid lg:grid-cols-3 xl:grid-cols-5">

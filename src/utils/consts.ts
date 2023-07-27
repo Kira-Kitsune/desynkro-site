@@ -11,6 +11,7 @@ import IconCars from '../assets/images/icons/Cars.png';
 import IconCosplay from '../assets/images/icons/Cosplay.png';
 import IconModels from '../assets/images/icons/Models.png';
 import IconPets from '../assets/images/icons/Pets.png';
+import IconStreet from '../assets/images/icons/Street_Photography.png';
 
 export const NavItems: NavItem[] = [
     {
@@ -158,7 +159,7 @@ export const ImgIcons: ImgIconType[] = [
         text: 'Vehicles',
     },
     {
-        src: IconPlaceholder,
+        src: IconStreet,
         href: '/portfolio/street',
         text: 'Street Photography',
     },

@@ -58,7 +58,7 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
     return (
         <div class="flex w-full items-center justify-center gap-4 lg:w-10/12 lg:gap-12">
             <FaSolidCircleArrowLeft
-                class="cursor-pointer"
+                class="cursor-pointer fill-neutral-100"
                 onClick={onPrevious}
                 size={36}
             />
@@ -142,14 +142,14 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
                                 when={idx() === section()}
                                 fallback={
                                     <FaRegularCircle
-                                        class="cursor-pointer"
+                                        class="cursor-pointer fill-neutral-100"
                                         size={24}
                                         onClick={() => clickDot(idx())}
                                     />
                                 }
                             >
                                 <FaRegularCircleDot
-                                    class="cursor-pointer"
+                                    class="cursor-pointer fill-neutral-100"
                                     size={24}
                                     onClick={() => clickDot(idx())}
                                 />
@@ -159,7 +159,7 @@ const SlideShowText: Component<Props> = ({ sections, timerSeconds }) => {
                 </div>
             </div>
             <FaSolidCircleArrowRight
-                class="cursor-pointer"
+                class="cursor-pointer fill-neutral-100"
                 onClick={() => onNext(false)}
                 size={36}
             />

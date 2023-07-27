@@ -27,7 +27,7 @@ const PortfolioSection: Component<Props> = ({ folder, title }) => {
             }
         >
             <div class="mt-[5.625rem] flex w-full flex-col text-xl text-neutral-100">
-                {src() && (
+                <Show when={src()}>
                     <div
                         class="fixed z-[200] flex h-full w-full scale-[1.25] items-center justify-center bg-black bg-opacity-40 pb-[2.8125rem] lg:scale-[2.5]"
                         onClick={() => setSrc(undefined)}
@@ -37,9 +37,12 @@ const PortfolioSection: Component<Props> = ({ folder, title }) => {
                             alt={`Sample_Portfolio_BIG`}
                             focused={true}
                         />
-                        <AiOutlineClose size={28} class="cursor-pointer" />
+                        <AiOutlineClose
+                            size={28}
+                            class="cursor-pointer fill-neutral-100"
+                        />
                     </div>
-                )}
+                </Show>
                 <div class="z-30 flex w-full flex-col items-center justify-center gap-8 bg-gradient-to-b from-[#002b39] to-[#021c23] bg-bottom p-4 text-center text-3xl shadow-desynkro max-md:flex-col md:gap-0 md:p-16">
                     <div class="flex flex-col py-8 text-5xl">
                         {title}

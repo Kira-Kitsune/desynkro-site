@@ -10,8 +10,9 @@ import {
     AnimalPortfolio,
     CosplayPortfolio,
     ModelPortfolio,
-    VechilePortfolio as VehiclePortfolio,
+    VehiclePortfolio,
     StreetPortfolio,
+    OtherPortfolio,
 } from './utils/portfolios';
 
 const App: Component = () => {
@@ -72,7 +73,10 @@ const App: Component = () => {
                 <Route
                     path="/portfolio/other"
                     element={
-                        <PortfolioSection folder={[]} title="Other Photos" />
+                        <PortfolioSection
+                            folder={OtherPortfolio}
+                            title="Other Photos"
+                        />
                     }
                 />
                 <Route path="*" component={_404} />

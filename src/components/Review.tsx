@@ -38,7 +38,7 @@ function Stars(activeStars: number, totalStars = 5) {
         );
     });
 
-    return <div class="flex text-yellow-500">{starsArr}</div>;
+    return <div class="flex fill-yellow-500">{starsArr}</div>;
 }
 
 const Review: Component<Props> = ({ review }) => {

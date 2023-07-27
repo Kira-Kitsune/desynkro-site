@@ -1,12 +1,12 @@
-import { Component, For, createSignal } from 'solid-js';
-import NavButtton from './navbar/NavButton';
-import Logo from '../assets/images/logo_01.png';
-import { IoMenu } from 'solid-icons/io';
 import { AiOutlineClose } from 'solid-icons/ai';
-import TextButton from './TextButton';
-import NavDropdown from './navbar/NavDropdown';
-import IconButton from './IconButton';
+import { IoMenu } from 'solid-icons/io';
+import { Component, For, Show, createSignal } from 'solid-js';
+import Logo from '../assets/images/logo_01.png';
 import { NavItems, Socials } from '../utils/consts';
+import IconButton from './IconButton';
+import TextButton from './TextButton';
+import NavButtton from './navbar/NavButton';
+import NavDropdown from './navbar/NavDropdown';
 
 const Navbar: Component = () => {
     const [isMenuOpen, setMenuOpen] = createSignal(false);
@@ -33,42 +33,52 @@ const Navbar: Component = () => {
                     </For>
                     <NavDropdown socials={Socials} />
                 </nav>
-                <nav class="absolute right-0 z-50 mr-10 text-neutral-100 md:hidden">
-                    <IoMenu
-                        size={48}
-                        class={`cursor-pointer ${isMenuOpen() && 'hidden'}`}
-                        onClick={menuToggleHandler}
-                    />
-                    <AiOutlineClose
-                        size={48}
-                        class={`cursor-pointer ${!isMenuOpen() && 'hidden'}`}
-                        onClick={menuToggleHandler}
-                    />
+                <nav class="absolute right-0 z-50 mr-10 md:hidden">
+                    <Show
+                        fallback={
+                            <AiOutlineClose
+                                size={48}
+                                class={`cursor-pointer fill-neutral-100`}
+                                onClick={menuToggleHandler}
+                            />
+                        }
+                        when={!isMenuOpen()}
+                    >
+                        <IoMenu
+                            size={48}
+                            class="cursor-pointer text-neutral-100"
+                            onClick={menuToggleHandler}
+                        />
+                    </Show>
                 </nav>
             </header>
-
-            <div
-                class={`fixed z-40 h-full w-full flex-col items-center gap-6 bg-neutral-800 bg-opacity-80 pt-36 text-lg md:hidden ${
-                    !isMenuOpen() ? 'hidden' : 'flex'
-                }`}
-            >
-                <For each={NavItems}>
-                    {({ text, href }) => (
-                        <div onClick={menuToggleHandler}>
-                            <TextButton text={text.toUpperCase()} href={href} />
-                        </div>
-                    )}
-                </For>
-                <div class="mt-4 flex gap-8 text-white">
-                    <For each={Socials}>
-                        {({ Icon, href }) => (
+            <Show when={isMenuOpen()}>
+                <div class="flex fixed z-40 h-full w-full flex-col items-center gap-6 bg-neutral-800 bg-opacity-80 pt-36 text-lg md:hidden">
+                    <For each={NavItems}>
+                        {({ text, href }) => (
                             <div onClick={menuToggleHandler}>
-                                <IconButton Icon={Icon} href={href} size={40} />
+                                <TextButton
+                                    text={text.toUpperCase()}
+                                    href={href}
+                                />
                             </div>
                         )}
                     </For>
+                    <div class="mt-4 flex gap-8 text-white">
+                        <For each={Socials}>
+                            {({ Icon, href }) => (
+                                <div onClick={menuToggleHandler}>
+                                    <IconButton
+                                        Icon={Icon}
+                                        href={href}
+                                        size={40}
+                                    />
+                                </div>
+                            )}
+                        </For>
+                    </div>
                 </div>
-            </div>
+            </Show>
         </>
     );
 };

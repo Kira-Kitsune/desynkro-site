@@ -26,7 +26,7 @@ const SlideShowPhoto: Component<Props> = ({ gallery }) => {
         <div class="flex flex-col items-center justify-center lg:hidden">
             <div class="flex w-11/12 items-center justify-center gap-4 lg:hidden">
                 <FaSolidCircleArrowLeft
-                    class="cursor-pointer"
+                    class="cursor-pointer fill-neutral-100"
                     onClick={onPrevious}
                     size={48}
                 />
@@ -49,7 +49,7 @@ const SlideShowPhoto: Component<Props> = ({ gallery }) => {
                     </div>
                 </div>
                 <FaSolidCircleArrowRight
-                    class="cursor-pointer"
+                    class="cursor-pointer fill-neutral-100"
                     onClick={onNext}
                     size={48}
                 />

@@ -231,7 +231,7 @@ import Vehicle11 from '../assets/portfolio/vehicles/Motorcycle-4.jpg';
 import Vehicle12 from '../assets/portfolio/vehicles/Motorcycle-5.jpg';
 import Vehicle13 from '../assets/portfolio/vehicles/Motorcycle-6.jpg';
 import Vehicle14 from '../assets/portfolio/vehicles/Skyline-1.jpg';
-export const VechilePortfolio: string[] = [
+export const VehiclePortfolio: string[] = [
     Vehicle0,
     Vehicle1,
     Vehicle2,
@@ -249,5 +249,39 @@ export const VechilePortfolio: string[] = [
     Vehicle14,
 ];
 
-export const StreetPortfolio: string[] = [];
+import Street0 from '../assets/portfolio/street/Website-1.jpg';
+import Street1 from '../assets/portfolio/street/Website-2.jpg';
+import Street2 from '../assets/portfolio/street/Website-3.jpg';
+import Street3 from '../assets/portfolio/street/Website-4.jpg';
+import Street4 from '../assets/portfolio/street/Website-5.jpg';
+import Street5 from '../assets/portfolio/street/Website-6.jpg';
+import Street6 from '../assets/portfolio/street/Website-7.jpg';
+import Street7 from '../assets/portfolio/street/Website-8.jpg';
+import Street8 from '../assets/portfolio/street/Website-9.jpg';
+import Street9 from '../assets/portfolio/street/Website-10.jpg';
+import Street10 from '../assets/portfolio/street/Website-11.jpg';
+import Street11 from '../assets/portfolio/street/Website-12.jpg';
+import Street12 from '../assets/portfolio/street/Website-13.jpg';
+import Street13 from '../assets/portfolio/street/Website-14.jpg';
+import Street14 from '../assets/portfolio/street/Website-15.jpg';
+import Street15 from '../assets/portfolio/street/Website-16.jpg';
+export const StreetPortfolio: string[] = [
+    Street0,
+    Street1,
+    Street2,
+    Street3,
+    Street4,
+    Street5,
+    Street6,
+    Street7,
+    Street8,
+    Street9,
+    Street10,
+    Street11,
+    Street12,
+    Street13,
+    Street14,
+    Street15,
+];
+
 export const OtherPortfolio: string[] = [];
