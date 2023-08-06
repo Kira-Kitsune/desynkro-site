@@ -1,5 +1,5 @@
-import { Component, For, onMount } from 'solid-js';
-import ImgIcon from '../components/ImgIcon';
+import { Component, For, onMount, lazy } from 'solid-js';
+const ImgIcon = lazy(() => import('../components/ImgIcon'));
 import { ImgIcons } from '../utils/consts';
 
 const Portfolio: Component = () => {

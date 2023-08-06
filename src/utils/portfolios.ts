@@ -180,18 +180,19 @@ import Model21 from '../assets/portfolio/models/Iago Model-6.jpg';
 import Model22 from '../assets/portfolio/models/Iago-1.jpg';
 import Model23 from '../assets/portfolio/models/Iago-2.jpg';
 import Model24 from '../assets/portfolio/models/Iago-3.jpg';
-import Model25 from '../assets/portfolio/models/Jacob 2-2.jpg';
-import Model26 from '../assets/portfolio/models/Jacob-1.jpg';
-import Model27 from '../assets/portfolio/models/Jacob-2.jpg';
-import Model28 from '../assets/portfolio/models/Kat-1.jpg';
-import Model29 from '../assets/portfolio/models/Kat-2.jpg';
-import Model30 from '../assets/portfolio/models/Kat-3.jpg';
-import Model31 from '../assets/portfolio/models/Mickal-1.jpg';
-import Model32 from '../assets/portfolio/models/Mickal-2.jpg';
-import Model33 from '../assets/portfolio/models/Mickal-4.jpg';
-import Model34 from "../assets/portfolio/models/Qwerty's BF and Bro-2.jpg";
-import Model35 from "../assets/portfolio/models/Qwerty's BF and Bro-3.jpg";
-import Model36 from "../assets/portfolio/models/Qwerty's BF and Bro-8.jpg";
+import Model25 from '../assets/portfolio/models/Iago-HOTTTTT.jpg';
+import Model26 from '../assets/portfolio/models/Jacob 2-2.jpg';
+import Model27 from '../assets/portfolio/models/Jacob-1.jpg';
+import Model28 from '../assets/portfolio/models/Jacob-2.jpg';
+import Model29 from '../assets/portfolio/models/Kat-1.jpg';
+import Model30 from '../assets/portfolio/models/Kat-2.jpg';
+import Model31 from '../assets/portfolio/models/Kat-3.jpg';
+import Model32 from '../assets/portfolio/models/Mickal-1.jpg';
+import Model33 from '../assets/portfolio/models/Mickal-2.jpg';
+import Model34 from '../assets/portfolio/models/Mickal-4.jpg';
+import Model35 from "../assets/portfolio/models/Qwerty's BF and Bro-2.jpg";
+import Model36 from "../assets/portfolio/models/Qwerty's BF and Bro-3.jpg";
+import Model37 from "../assets/portfolio/models/Qwerty's BF and Bro-8.jpg";
 export const ModelPortfolio: string[] = [
     Model0,
     Model1,
@@ -230,6 +231,7 @@ export const ModelPortfolio: string[] = [
     Model34,
     Model35,
     Model36,
+    Model37,
 ];
 import Vehicle0 from '../assets/portfolio/vehicles/Cars_1.jpg';
 import Vehicle1 from '../assets/portfolio/vehicles/Cars_2.jpg';

@@ -1,5 +1,5 @@
-import { Component, For, Show, createSignal } from 'solid-js';
-import PortfolioItem from '../components/PortfolioItem';
+import { Component, For, Show, Suspense, createSignal, lazy } from 'solid-js';
+const PortfolioItem = lazy(() => import('../components/PortfolioItem'));
 import { AiOutlineClose } from 'solid-icons/ai';
 import TextButton from '../components/TextButton';
 type Props = {
@@ -58,10 +58,12 @@ const PortfolioSection: Component<Props> = ({ folder, title }) => {
                         <For each={folder}>
                             {(src) => (
                                 <div onClick={() => setSrc(src)}>
-                                    <PortfolioItem
-                                        src={src}
-                                        alt={src.split('/').at(-1)}
-                                    />
+                                    <Suspense fallback={<p>Loading...</p>}>
+                                        <PortfolioItem
+                                            src={src}
+                                            alt={src.split('/').at(-1)}
+                                        />
+                                    </Suspense>
                                 </div>
                             )}
                         </For>

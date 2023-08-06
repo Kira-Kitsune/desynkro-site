@@ -1,11 +1,11 @@
-import type { Component } from 'solid-js';
+import { lazy, type Component } from 'solid-js';
 import Navbar from './components/Navbar';
 import { Route, Routes } from '@solidjs/router';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Footer from './components/Footer';
+const Home = lazy(() => import('./pages/Home'));
 import _404 from './pages/_404';
-import PortfolioSection from './pages/PortfolioSection';
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const PortfolioSection = lazy(() => import('./pages/PortfolioSection'));
+import Footer from './components/Footer';
 import {
     AnimalPortfolio,
     CosplayPortfolio,

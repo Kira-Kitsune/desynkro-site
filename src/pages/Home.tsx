@@ -1,4 +1,4 @@
-import { Component, For, Show, createSignal, onMount } from 'solid-js';
+import { Component, For, Show, createSignal, onMount, lazy } from 'solid-js';
 import Title from '../assets/images/title.png';
 import DeSynkro from '../assets/images/photo_desynkro.gif';
 import TextButton from '../components/TextButton';
