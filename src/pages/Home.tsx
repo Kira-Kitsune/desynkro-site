@@ -1,6 +1,6 @@
 import { Component, For, Show, createSignal, onMount, lazy } from 'solid-js';
 import Title from '../assets/images/title.png';
-import DeSynkro from '../assets/images/photo_desynkro.gif';
+import DeSynkro from '../assets/images/photo_desynkro_2.gif';
 import TextButton from '../components/TextButton';
 import PortfolioItem from '../components/PortfolioItem';
 import { AiOutlineClose } from 'solid-icons/ai';
