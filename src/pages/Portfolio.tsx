@@ -1,4 +1,4 @@
-import { Component, For, onMount, lazy } from 'solid-js';
+import { Component, For, onMount, lazy, Suspense } from 'solid-js';
 const ImgIcon = lazy(() => import('../components/ImgIcon'));
 import { ImgIcons } from '../utils/consts';
 
@@ -13,7 +13,9 @@ const Portfolio: Component = () => {
                 <div class="grid grid-cols-1 gap-y-8 gap-x-12 md:grid-cols-2 lg:grid-cols-3">
                     <For each={ImgIcons}>
                         {({ src, href, text }) => (
-                            <ImgIcon src={src} href={href} text={text} />
+                            <Suspense fallback={<p>Loading...</p>}>
+                                <ImgIcon src={src} href={href} text={text} />
+                            </Suspense>
                         )}
                     </For>
                 </div>

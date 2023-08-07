@@ -1,9 +1,9 @@
 import { lazy, type Component } from 'solid-js';
 import Navbar from './components/Navbar';
 import { Route, Routes } from '@solidjs/router';
-const Home = lazy(() => import('./pages/Home'));
+import Home from './pages/Home';
 import _404 from './pages/_404';
-const Portfolio = lazy(() => import('./pages/Portfolio'));
+import Portfolio from './pages/Portfolio';
 const PortfolioSection = lazy(() => import('./pages/PortfolioSection'));
 import Footer from './components/Footer';
 import {

@@ -1,21 +1,28 @@
-import { Component, For, Show, createSignal, onMount, lazy } from 'solid-js';
+import {
+    Component,
+    For,
+    Show,
+    createSignal,
+    onMount,
+    lazy,
+    Suspense,
+} from 'solid-js';
 import Title from '../assets/images/title.png';
 import DeSynkro from '../assets/images/photo_desynkro_2.gif';
 import TextButton from '../components/TextButton';
-import PortfolioItem from '../components/PortfolioItem';
+const PortfolioItem = lazy(() => import('../components/PortfolioItem'));
 import { AiOutlineClose } from 'solid-icons/ai';
 import { InfoText } from '../utils/consts';
 import { SamplePortfolio } from '../utils/portfolios';
 import SlideShowText from '../components/SlideShowText';
-import SlideShowPhoto from '../components/SlideShowPhoto';
+const SlideShowPhoto = lazy(() => import('../components/SlideShowPhoto'));
 
 const Home: Component = () => {
     onMount(() => {
         document.title = 'DeSynkro | Home';
     });
 
-    const [Sample, setSample] = createSignal<string[]>();
-    setSample(SamplePortfolio);
+    const [Sample, setSample] = createSignal<string[]>(SamplePortfolio);
     const [src, setSrc] = createSignal<string | undefined>(undefined);
 
     return (
@@ -42,11 +49,13 @@ const Home: Component = () => {
                     class="fixed z-[200] flex h-[100vh] w-full scale-[2.5] items-center justify-center bg-black bg-opacity-40 pb-[2.8125rem]"
                     onClick={() => setSrc(undefined)}
                 >
-                    <PortfolioItem
-                        src={src()}
-                        alt={`Sample_Portfolio_BIG`}
-                        focused={true}
-                    />
+                    <Suspense fallback={<p>Loading...</p>}>
+                        <PortfolioItem
+                            src={src()}
+                            alt={`Sample_Portfolio_BIG`}
+                            focused={true}
+                        />
+                    </Suspense>
                     <AiOutlineClose
                         size={28}
                         class="cursor-pointer fill-neutral-100"
@@ -61,28 +70,36 @@ const Home: Component = () => {
                             <Show
                                 fallback={
                                     <div onClick={() => setSrc(src)}>
-                                        <PortfolioItem
-                                            src={src}
-                                            alt={`Sample_Portfolio_${
-                                                index() + 1
-                                            }`}
-                                            sample={true}
-                                        />
+                                        <Suspense fallback={<p>Loading...</p>}>
+                                            <PortfolioItem
+                                                src={src}
+                                                alt={`Sample_Portfolio_${
+                                                    index() + 1
+                                                }`}
+                                                sample={true}
+                                            />
+                                        </Suspense>
                                     </div>
                                 }
                                 when={index() !== SamplePortfolio.length - 1}
                             >
                                 <div onClick={() => setSrc(src)}>
-                                    <PortfolioItem
-                                        src={src}
-                                        alt={`Sample_Portfolio_${index() + 1}`}
-                                    />
+                                    <Suspense fallback={<p>Loading...</p>}>
+                                        <PortfolioItem
+                                            src={src}
+                                            alt={`Sample_Portfolio_${
+                                                index() + 1
+                                            }`}
+                                        />
+                                    </Suspense>
                                 </div>
                             </Show>
                         )}
                     </For>
                 </div>
-                <SlideShowPhoto gallery={Sample()} />
+                <Suspense fallback={<p>Loading...</p>}>
+                    <SlideShowPhoto gallery={Sample()} />
+                </Suspense>
                 <span class="text-4xl">
                     See more of my work{' '}
                     <TextButton
