@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import _404 from './pages/_404';
 import Portfolio from './pages/Portfolio';
 const PortfolioSection = lazy(() => import('./pages/PortfolioSection'));
+const Album = lazy(() => import('./pages/Album'));
 import Footer from './components/Footer';
 import {
     AnimalPortfolio,
@@ -14,14 +15,15 @@ import {
     StreetPortfolio,
     OtherPortfolio,
 } from './utils/portfolios';
+import { PixelExpo2023 } from './utils/albums';
 
 const App: Component = () => {
     return (
         <>
             <Navbar />
-            <div class="fixed z-[45] flex h-8 w-full items-center justify-center bg-yellow-400 text-center text-xl">
+            {/* <div class="fixed z-[45] flex h-8 w-full items-center justify-center bg-yellow-400 text-center text-xl">
                 Website is currently in Beta!
-            </div>
+            </div> */}
             <Routes>
                 <Route path="/" component={Home} />
                 <Route path="/portfolio" component={Portfolio} />
@@ -77,6 +79,12 @@ const App: Component = () => {
                             folder={OtherPortfolio}
                             title="Other Photos"
                         />
+                    }
+                />
+                <Route
+                    path="/portfolio/album/pixel_expo_2023"
+                    element={
+                        <Album folder={PixelExpo2023} title="Pixel Expo 2023" />
                     }
                 />
                 <Route path="*" component={_404} />

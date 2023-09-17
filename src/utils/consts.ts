@@ -6,12 +6,13 @@ import {
 } from 'solid-icons/fa';
 import type { Social, NavItem, ImgIconType, Section } from '../utils/types';
 
-import IconPlaceholder from '../assets/images/icons/Placeholder.png';
-import IconCars from '../assets/images/icons/Cars.png';
-import IconCosplay from '../assets/images/icons/Cosplay.png';
-import IconModels from '../assets/images/icons/Models.png';
-import IconPets from '../assets/images/icons/Pets.png';
-import IconStreet from '../assets/images/icons/Street_Photography.png';
+import IconPlaceholder from '../assets/images/Placeholder.png';
+
+import IconCars from '../assets/images/iconsCategories/Cars.png';
+import IconCosplay from '../assets/images/iconsCategories/Cosplay.png';
+import IconModels from '../assets/images/iconsCategories/Models.png';
+import IconPets from '../assets/images/iconsCategories/Pets.png';
+import IconStreet from '../assets/images/iconsCategories/Street_Photography.png';
 
 export const NavItems: NavItem[] = [
     {
@@ -137,7 +138,7 @@ export const InfoText: Section[] = [
     },
 ];
 
-export const ImgIcons: ImgIconType[] = [
+export const ImgIconsCategories: ImgIconType[] = [
     {
         src: IconModels,
         href: '/portfolio/models',
@@ -163,9 +164,39 @@ export const ImgIcons: ImgIconType[] = [
         href: '/portfolio/street',
         text: 'Street Photography',
     },
+    // {
+    //     src: IconPlaceholder,
+    //     href: '/portfolio/other',
+    //     text: 'Other Photos',
+    // },
+];
+
+import PixelExpo2023 from '../assets/images/iconsAlbums/Pixel_Expo_2023.png';
+
+export const ImgIconsAlbums: ImgIconType[] = [
     {
-        src: IconPlaceholder,
-        href: '/portfolio/other',
-        text: 'Other Photos',
+        src: PixelExpo2023,
+        href: '/portfolio/album/pixel_expo_2023',
+        text: 'Pixel Expo 2023',
     },
+    // {
+    //     src: IconPlaceholder,
+    //     href: '/portfolio/album/placeholder',
+    //     text: 'Placeholder',
+    // },
+    // {
+    //     src: IconPlaceholder,
+    //     href: '/portfolio/album/placeholder',
+    //     text: 'Placeholder',
+    // },
+    // {
+    //     src: IconPlaceholder,
+    //     href: '/portfolio/album/placeholder',
+    //     text: 'Placeholder',
+    // },
+    // {
+    //     src: IconPlaceholder,
+    //     href: '/portfolio/album/placeholder',
+    //     text: 'Placeholder',
+    // },
 ];

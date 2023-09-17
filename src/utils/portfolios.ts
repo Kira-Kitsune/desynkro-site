@@ -1,24 +1,24 @@
-import Sample0 from '../assets/portfolio/sample/0_Daena.jpg';
-import Sample1 from '../assets/portfolio/sample/1_Iago.jpg';
-import Sample2 from '../assets/portfolio/sample/2_Luna.jpg';
-import Sample3 from '../assets/portfolio/sample/3_Carla.jpg';
-import Sample4 from '../assets/portfolio/sample/4_Walter.jpg';
-import Sample5 from '../assets/portfolio/sample/5_Qwerty.jpg';
-import Sample6 from '../assets/portfolio/sample/6_Jade.jpg';
-import Sample7 from '../assets/portfolio/sample/7_Iago_Deku.jpg';
-import Sample8 from '../assets/portfolio/sample/8_Kat.jpg';
-import Sample9 from '../assets/portfolio/sample/9_Doeker.jpg';
+import FrontPage0 from '../assets/portfolio/frontPage/Front Page - 01.jpg';
+import FrontPage1 from '../assets/portfolio/frontPage/Front Page - 02.jpg';
+import FrontPage2 from '../assets/portfolio/frontPage/Front Page - 03.jpg';
+import FrontPage3 from '../assets/portfolio/frontPage/Front Page - 04.jpg';
+import FrontPage4 from '../assets/portfolio/frontPage/Front Page - 05.jpg';
+import FrontPage5 from '../assets/portfolio/frontPage/Front Page - 06.jpg';
+import FrontPage6 from '../assets/portfolio/frontPage/Front Page - 07.jpg';
+import FrontPage7 from '../assets/portfolio/frontPage/Front Page - 08.jpg';
+import FrontPage8 from '../assets/portfolio/frontPage/Front Page - 09.jpg';
+import FrontPage9 from '../assets/portfolio/frontPage/Front Page - 10.jpg';
 export const SamplePortfolio: string[] = [
-    Sample0,
-    Sample1,
-    Sample2,
-    Sample3,
-    Sample4,
-    Sample5,
-    Sample6,
-    Sample7,
-    Sample8,
-    Sample9,
+    FrontPage0,
+    FrontPage1,
+    FrontPage2,
+    FrontPage3,
+    FrontPage4,
+    FrontPage5,
+    FrontPage6,
+    FrontPage7,
+    FrontPage8,
+    FrontPage9,
 ];
 
 import Animal0 from '../assets/portfolio/animals/Cats 2-1.jpg';
@@ -94,35 +94,38 @@ export const AnimalPortfolio: string[] = [
     Animal35,
 ];
 
-import Cosplay0 from '../assets/portfolio/cosplays/Cosplays-1.jpg';
-import Cosplay1 from '../assets/portfolio/cosplays/Cosplays-10-1.jpg';
-import Cosplay2 from '../assets/portfolio/cosplays/Cosplays-10.jpg';
-import Cosplay3 from '../assets/portfolio/cosplays/Cosplays-11.jpg';
-import Cosplay4 from '../assets/portfolio/cosplays/Cosplays-13.jpg';
-import Cosplay5 from '../assets/portfolio/cosplays/Cosplays-14.jpg';
-import Cosplay6 from '../assets/portfolio/cosplays/Cosplays-15.jpg';
-import Cosplay7 from '../assets/portfolio/cosplays/Cosplays-17.jpg';
-import Cosplay8 from '../assets/portfolio/cosplays/Cosplays-18.jpg';
-import Cosplay9 from '../assets/portfolio/cosplays/Cosplays-19.jpg';
-import Cosplay10 from '../assets/portfolio/cosplays/Cosplays-20.jpg';
-import Cosplay11 from '../assets/portfolio/cosplays/Cosplays-21.jpg';
-import Cosplay12 from '../assets/portfolio/cosplays/Cosplays-22.jpg';
-import Cosplay13 from '../assets/portfolio/cosplays/Cosplays-23.jpg';
-import Cosplay14 from '../assets/portfolio/cosplays/Cosplays-25.jpg';
-import Cosplay15 from '../assets/portfolio/cosplays/Cosplays-4.jpg';
-import Cosplay16 from '../assets/portfolio/cosplays/Cosplays-6.jpg';
-import Cosplay17 from '../assets/portfolio/cosplays/Cosplays-7.jpg';
-import Cosplay18 from '../assets/portfolio/cosplays/Cosplays-8.jpg';
-import Cosplay19 from '../assets/portfolio/cosplays/Deku 1-1.jpg';
-import Cosplay20 from '../assets/portfolio/cosplays/Deku 1-2.jpg';
-import Cosplay21 from '../assets/portfolio/cosplays/Iago Model-3.jpg';
-import Cosplay22 from '../assets/portfolio/cosplays/Website-1.jpg';
-import Cosplay23 from '../assets/portfolio/cosplays/Website-2.jpg';
-import Cosplay24 from '../assets/portfolio/cosplays/Website-3.jpg';
-import Cosplay25 from '../assets/portfolio/cosplays/Website-4.jpg';
-import Cosplay26 from '../assets/portfolio/cosplays/Website-5.jpg';
-import Cosplay27 from '../assets/portfolio/cosplays/Website-6.jpg';
-import Cosplay28 from '../assets/portfolio/cosplays/Website-7.jpg';
+import Cosplay0 from '../assets/portfolio/cosplays/Lumine-1.jpg';
+import Cosplay1 from '../assets/portfolio/cosplays/Lumine-2.jpg';
+import Cosplay2 from '../assets/portfolio/cosplays/Lumine-3.jpg';
+import Cosplay3 from '../assets/portfolio/cosplays/Cosplays-1.jpg';
+import Cosplay4 from '../assets/portfolio/cosplays/Cosplays-10-1.jpg';
+import Cosplay5 from '../assets/portfolio/cosplays/Cosplays-10.jpg';
+import Cosplay6 from '../assets/portfolio/cosplays/Cosplays-11.jpg';
+import Cosplay7 from '../assets/portfolio/cosplays/Cosplays-13.jpg';
+import Cosplay8 from '../assets/portfolio/cosplays/Cosplays-14.jpg';
+import Cosplay9 from '../assets/portfolio/cosplays/Cosplays-15.jpg';
+import Cosplay10 from '../assets/portfolio/cosplays/Cosplays-17.jpg';
+import Cosplay11 from '../assets/portfolio/cosplays/Cosplays-18.jpg';
+import Cosplay12 from '../assets/portfolio/cosplays/Cosplays-19.jpg';
+import Cosplay13 from '../assets/portfolio/cosplays/Cosplays-20.jpg';
+import Cosplay14 from '../assets/portfolio/cosplays/Cosplays-21.jpg';
+import Cosplay15 from '../assets/portfolio/cosplays/Cosplays-22.jpg';
+import Cosplay16 from '../assets/portfolio/cosplays/Cosplays-23.jpg';
+import Cosplay17 from '../assets/portfolio/cosplays/Cosplays-25.jpg';
+import Cosplay18 from '../assets/portfolio/cosplays/Cosplays-4.jpg';
+import Cosplay19 from '../assets/portfolio/cosplays/Cosplays-6.jpg';
+import Cosplay20 from '../assets/portfolio/cosplays/Cosplays-8.jpg';
+import Cosplay21 from '../assets/portfolio/cosplays/Deku 1-1.jpg';
+import Cosplay22 from '../assets/portfolio/cosplays/Deku 1-2.jpg';
+import Cosplay23 from '../assets/portfolio/cosplays/Iago Model-3.jpg';
+import Cosplay24 from '../assets/portfolio/cosplays/Website-1.jpg';
+import Cosplay25 from '../assets/portfolio/cosplays/Website-2.jpg';
+import Cosplay26 from '../assets/portfolio/cosplays/Website-3.jpg';
+import Cosplay27 from '../assets/portfolio/cosplays/Website-4.jpg';
+import Cosplay28 from '../assets/portfolio/cosplays/Website-5.jpg';
+import Cosplay29 from '../assets/portfolio/cosplays/Website-6.jpg';
+import Cosplay30 from '../assets/portfolio/cosplays/Website-7.jpg';
+
 export const CosplayPortfolio: string[] = [
     Cosplay0,
     Cosplay1,
@@ -153,46 +156,43 @@ export const CosplayPortfolio: string[] = [
     Cosplay26,
     Cosplay27,
     Cosplay28,
+    Cosplay29,
+    Cosplay30,
 ];
 
-import Model0 from '../assets/portfolio/models/Daena Casas-3.jpg';
-import Model1 from '../assets/portfolio/models/Daena.jpg';
-import Model2 from '../assets/portfolio/models/Daena1-1.jpg';
+import Model0 from '../assets/portfolio/models/Daena.jpg';
+import Model1 from '../assets/portfolio/models/Daena Casas-3.jpg';
+import Model2 from '../assets/portfolio/models/Daena_Web_1.jpg';
 import Model3 from '../assets/portfolio/models/Daena_2023_1.jpg';
 import Model4 from '../assets/portfolio/models/Daena_2023_2.jpg';
 import Model5 from '../assets/portfolio/models/Daena_2023_3.jpg';
 import Model6 from '../assets/portfolio/models/Daena_Night_1.jpg';
 import Model7 from '../assets/portfolio/models/Daena_Night_2.jpg';
 import Model8 from '../assets/portfolio/models/Daena_Night_3.jpg';
-import Model9 from '../assets/portfolio/models/Daena_Web_1.jpg';
+import Model9 from '../assets/portfolio/models/Doeker_2023_1.jpg';
 import Model10 from '../assets/portfolio/models/Doeker 1-2.jpg';
-import Model11 from '../assets/portfolio/models/Doeker_2023_1.jpg';
-import Model12 from '../assets/portfolio/models/Doeker_2023_2.jpg';
-import Model13 from '../assets/portfolio/models/Dolly_2023_1.jpg';
-import Model14 from '../assets/portfolio/models/Dolly_2023_2.jpg';
-import Model15 from '../assets/portfolio/models/Dolly_2023_3.jpg';
-import Model16 from '../assets/portfolio/models/Iago 2-1.jpg';
-import Model17 from '../assets/portfolio/models/Iago Model-1.jpg';
-import Model18 from '../assets/portfolio/models/Iago Model-2.jpg';
-import Model19 from '../assets/portfolio/models/Iago Model-4.jpg';
-import Model20 from '../assets/portfolio/models/Iago Model-5.jpg';
-import Model21 from '../assets/portfolio/models/Iago Model-6.jpg';
-import Model22 from '../assets/portfolio/models/Iago-1.jpg';
-import Model23 from '../assets/portfolio/models/Iago-2.jpg';
-import Model24 from '../assets/portfolio/models/Iago-3.jpg';
-import Model25 from '../assets/portfolio/models/Iago-HOTTTTT.jpg';
-import Model26 from '../assets/portfolio/models/Jacob 2-2.jpg';
-import Model27 from '../assets/portfolio/models/Jacob-1.jpg';
-import Model28 from '../assets/portfolio/models/Jacob-2.jpg';
-import Model29 from '../assets/portfolio/models/Kat-1.jpg';
-import Model30 from '../assets/portfolio/models/Kat-2.jpg';
-import Model31 from '../assets/portfolio/models/Kat-3.jpg';
-import Model32 from '../assets/portfolio/models/Mickal-1.jpg';
-import Model33 from '../assets/portfolio/models/Mickal-2.jpg';
-import Model34 from '../assets/portfolio/models/Mickal-4.jpg';
-import Model35 from "../assets/portfolio/models/Qwerty's BF and Bro-2.jpg";
-import Model36 from "../assets/portfolio/models/Qwerty's BF and Bro-3.jpg";
-import Model37 from "../assets/portfolio/models/Qwerty's BF and Bro-8.jpg";
+import Model11 from '../assets/portfolio/models/Doeker_2023_2.jpg';
+import Model12 from '../assets/portfolio/models/Dolly_2023_1.jpg';
+import Model13 from '../assets/portfolio/models/Dolly_2023_2.jpg';
+import Model14 from '../assets/portfolio/models/Dolly_2023_3.jpg';
+import Model15 from '../assets/portfolio/models/Iago Model-2.jpg';
+import Model16 from '../assets/portfolio/models/Iago Model-4.jpg';
+import Model17 from '../assets/portfolio/models/Iago Model-5.jpg';
+import Model18 from '../assets/portfolio/models/Iago-3.jpg';
+import Model19 from '../assets/portfolio/models/Iago-HOTTTTT.jpg';
+import Model20 from '../assets/portfolio/models/Iago Model-1.jpg';
+import Model21 from '../assets/portfolio/models/Jacob 2-2.jpg';
+import Model22 from '../assets/portfolio/models/Jacob-1.jpg';
+import Model23 from '../assets/portfolio/models/Jacob-2.jpg';
+import Model24 from '../assets/portfolio/models/Kat-1.jpg';
+import Model25 from '../assets/portfolio/models/Kat-2.jpg';
+import Model26 from '../assets/portfolio/models/Kat-3.jpg';
+import Model27 from '../assets/portfolio/models/Mickal-1.jpg';
+import Model28 from '../assets/portfolio/models/Mickal-2.jpg';
+import Model29 from '../assets/portfolio/models/Mickal-4.jpg';
+import Model30 from "../assets/portfolio/models/Qwerty's BF and Bro-2.jpg";
+import Model31 from "../assets/portfolio/models/Qwerty's BF and Bro-3.jpg";
+import Model32 from "../assets/portfolio/models/Qwerty's BF and Bro-8.jpg";
 export const ModelPortfolio: string[] = [
     Model0,
     Model1,
@@ -227,12 +227,8 @@ export const ModelPortfolio: string[] = [
     Model30,
     Model31,
     Model32,
-    Model33,
-    Model34,
-    Model35,
-    Model36,
-    Model37,
 ];
+
 import Vehicle0 from '../assets/portfolio/vehicles/Cars_1.jpg';
 import Vehicle1 from '../assets/portfolio/vehicles/Cars_2.jpg';
 import Vehicle2 from '../assets/portfolio/vehicles/Cars_3.jpg';
@@ -243,19 +239,18 @@ import Vehicle6 from '../assets/portfolio/vehicles/Dirtbike-2.jpg';
 import Vehicle7 from '../assets/portfolio/vehicles/Dirtbike-3.jpg';
 import Vehicle8 from '../assets/portfolio/vehicles/Motorcycle-1.jpg';
 import Vehicle9 from '../assets/portfolio/vehicles/Motorcycle-2.jpg';
-import Vehicle10 from '../assets/portfolio/vehicles/Motorcycle-3.jpg';
-import Vehicle11 from '../assets/portfolio/vehicles/Motorcycle-4.jpg';
-import Vehicle12 from '../assets/portfolio/vehicles/Motorcycle-5.jpg';
-import Vehicle13 from '../assets/portfolio/vehicles/Motorcycle-6.jpg';
-import Vehicle14 from '../assets/portfolio/vehicles/Skyline-1.jpg';
-import Vehicle15 from '../assets/portfolio/vehicles/Website-1-3.jpg';
-import Vehicle16 from '../assets/portfolio/vehicles/Website-2-2.jpg';
-import Vehicle17 from '../assets/portfolio/vehicles/Website-3.jpg';
-import Vehicle18 from '../assets/portfolio/vehicles/jacob Car-1.jpg';
-import Vehicle19 from '../assets/portfolio/vehicles/jacob Car-2.jpg';
-import Vehicle20 from '../assets/portfolio/vehicles/jacob Car-3.jpg';
-import Vehicle21 from '../assets/portfolio/vehicles/jacob Car-4.jpg';
-import Vehicle22 from '../assets/portfolio/vehicles/jacob Car-5.jpg';
+import Vehicle10 from '../assets/portfolio/vehicles/Motorcycle-4.jpg';
+import Vehicle11 from '../assets/portfolio/vehicles/Motorcycle-5.jpg';
+import Vehicle12 from '../assets/portfolio/vehicles/Motorcycle-6.jpg';
+import Vehicle13 from '../assets/portfolio/vehicles/Skyline-1.jpg';
+import Vehicle14 from '../assets/portfolio/vehicles/Website-1-3.jpg';
+import Vehicle15 from '../assets/portfolio/vehicles/Website-2-2.jpg';
+import Vehicle16 from '../assets/portfolio/vehicles/Website-3.jpg';
+import Vehicle17 from '../assets/portfolio/vehicles/jacob Car-1.jpg';
+import Vehicle18 from '../assets/portfolio/vehicles/jacob Car-2.jpg';
+import Vehicle19 from '../assets/portfolio/vehicles/jacob Car-3.jpg';
+import Vehicle20 from '../assets/portfolio/vehicles/jacob Car-4.jpg';
+import Vehicle21 from '../assets/portfolio/vehicles/jacob Car-5.jpg';
 export const VehiclePortfolio: string[] = [
     Vehicle0,
     Vehicle1,
@@ -279,7 +274,6 @@ export const VehiclePortfolio: string[] = [
     Vehicle19,
     Vehicle20,
     Vehicle21,
-    Vehicle22,
 ];
 
 import Street0 from '../assets/portfolio/street/Website-1.jpg';

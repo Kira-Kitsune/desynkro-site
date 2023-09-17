@@ -54,7 +54,7 @@ const PortfolioSection: Component<Props> = ({ folder, title }) => {
                             />
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-2 lg:grid-cols-5 lg:gap-y-8 lg:gap-x-12 lg:p-8 xl:grid-cols-8">
+                    <div class="grid grid-cols-3 gap-2 lg:grid-cols-6 lg:gap-y-8 lg:gap-x-12 lg:p-8 xl:grid-cols-9">
                         <For each={folder}>
                             {(src) => (
                                 <div onClick={() => setSrc(src)}>

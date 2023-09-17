@@ -15,6 +15,7 @@ module.exports = {
             },
             aspectRatio: {
                 photo: '4 / 6',
+                albumItem: '1 / 1',
             },
             backgroundImage: {
                 title: 'url("./assets/images/title_bg.png")',
