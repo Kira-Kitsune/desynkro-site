@@ -9,18 +9,18 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "autoprefixer": "^10.4.13",
-        "postcss": "^8.4.27",
-        "prettier": "^3.0.1",
-        "prettier-plugin-tailwindcss": "^0.4.1",
+        "autoprefixer": "^10.4.15",
+        "postcss": "^8.4.29",
+        "prettier": "^3.0.3",
+        "prettier-plugin-tailwindcss": "^0.5.4",
         "tailwindcss": "^3.3.3",
-        "typescript": "^5.1.6",
-        "vite": "^4.4.8",
+        "typescript": "^5.2.2",
+        "vite": "^4.4.9",
         "vite-plugin-solid": "^2.5.0"
     },
     "dependencies": {
-        "@solidjs/router": "^0.8.2",
-        "solid-icons": "^1.0.11",
-        "solid-js": "^1.7.9"
+        "@solidjs/router": "^0.8.3",
+        "solid-icons": "^1.0.12",
+        "solid-js": "^1.7.11"
     }
 }
