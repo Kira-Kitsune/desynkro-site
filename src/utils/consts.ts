@@ -103,8 +103,6 @@ export const InfoText: Section[] = [
             'Thank you for your interest in reaching out to me! Please use the information below to get in touch, and I will get back to you as soon as possible.',
             '\nEmail:',
             'You can email me at business@desynkro.com. Please allow up to 48 hours for a response.',
-            '\nPhone:',
-            "If you prefer to speak with me by phone, please call +61 417 964 476. If I'm unable to answer your call, please leave a message and I'll return your call as soon as possible.",
             '\nSocial Media:',
             'You can also connect with me on social media. Follow me on Twitter (@DeSynkro) or Discord (https://desynkro.com/discord) for updates and news.',
             'I look forward to hearing from you!',
