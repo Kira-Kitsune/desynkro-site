@@ -27,10 +27,10 @@ export const NavItems: NavItem[] = [
         text: 'DigiSonica',
         href: 'https://digisonica.desynkro.com',
     },
-    {
-        text: 'Merch',
-        href: 'https://store.streamelements.com/desynkro',
-    },
+    // {
+    //     text: 'Merch',
+    //     href: 'https://store.streamelements.com/desynkro',
+    // },
 ];
 
 export const Socials: Social[] = [
@@ -65,10 +65,10 @@ export const Supports: Social[] = [
         text: 'Ko-fi',
         href: 'https://ko-fi.com/desynkro',
     },
-    {
-        text: 'Merch',
-        href: 'https://store.streamelements.com/desynkro',
-    },
+    // {
+    //     text: 'Merch',
+    //     href: 'https://store.streamelements.com/desynkro',
+    // },
 ];
 
 export const InfoText: Section[] = [
