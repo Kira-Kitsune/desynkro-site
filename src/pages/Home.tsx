@@ -26,8 +26,8 @@ const Home: Component = () => {
     const [src, setSrc] = createSignal<string | undefined>(undefined);
 
     return (
-        <div class="mt-[5.625rem] flex w-full flex-col text-xl text-neutral-100">
-            <div class="z-30 flex items-center justify-evenly gap-8 bg-title bg-bottom py-28 shadow-desynkro max-md:flex-col md:gap-0 md:p-36">
+        <div class="mt-22.5 flex w-full flex-col text-xl text-neutral-100">
+            <div class="z-30 flex items-center justify-evenly gap-8 background-home-img bg-bottom py-28 shadow-desynkro max-md:flex-col md:gap-0 md:p-36">
                 <img
                     src={DeSynkro}
                     alt="DeSynkro"
@@ -46,7 +46,7 @@ const Home: Component = () => {
             </div>
             <Show when={src()}>
                 <div
-                    class="fixed z-[200] flex h-[100vh] w-full scale-[2.5] items-center justify-center bg-black bg-opacity-40 pb-[2.8125rem]"
+                    class="fixed z-200 flex h-screen w-full scale-[2.5] items-center justify-center bg-black/40 pb-11.25"
                     onClick={() => setSrc(undefined)}
                 >
                     <Suspense fallback={<p>Loading...</p>}>
@@ -62,7 +62,7 @@ const Home: Component = () => {
                     />
                 </div>
             </Show>
-            <div class="z-10 flex w-full flex-col items-center bg-gradient-to-b from-[#002b39] to-[#021c23] px-4 py-12 shadow-desynkro">
+            <div class="z-10 flex w-full flex-col items-center bg-linear-to-b from-[#002b39] to-[#021c23] px-4 py-12 shadow-desynkro">
                 <h2 class="mb-8 text-4xl font-bold">Sample Portfolio</h2>
                 <div class="mb-12 hidden gap-x-12 gap-y-8 lg:grid lg:grid-cols-3 xl:grid-cols-5">
                     <For each={Sample()}>
@@ -73,9 +73,8 @@ const Home: Component = () => {
                                         <Suspense fallback={<p>Loading...</p>}>
                                             <PortfolioItem
                                                 src={src}
-                                                alt={`Sample_Portfolio_${
-                                                    index() + 1
-                                                }`}
+                                                alt={`Sample_Portfolio_${index() + 1
+                                                    }`}
                                                 sample={true}
                                             />
                                         </Suspense>
@@ -87,9 +86,8 @@ const Home: Component = () => {
                                     <Suspense fallback={<p>Loading...</p>}>
                                         <PortfolioItem
                                             src={src}
-                                            alt={`Sample_Portfolio_${
-                                                index() + 1
-                                            }`}
+                                            alt={`Sample_Portfolio_${index() + 1
+                                                }`}
                                         />
                                     </Suspense>
                                 </div>
@@ -109,7 +107,7 @@ const Home: Component = () => {
                     />
                 </span>
             </div>
-        </div>
+        </div >
     );
 };
 

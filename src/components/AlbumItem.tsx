@@ -13,7 +13,7 @@ const AlbumItem: Component<Props> = ({ src, alt, sample, focused }) => {
         <div
             class={`${
                 !focused &&
-                'transition-transform duration-[400ms] lg:cursor-pointer hover:lg:scale-[1.15]'
+                'transition-transform duration-400 lg:cursor-pointer hover:lg:scale-[1.15]'
             }`}
         >
             <img

@@ -11,7 +11,7 @@ const ImgIcon: Component<Props> = ({ src, href, text }) => {
     return (
         <A href={href} class="flex flex-col items-center justify-center gap-2">
             <img
-                class="w-[36rem] cursor-pointer"
+                class="w-xl cursor-pointer"
                 src={src}
                 alt="img-icon"
                 loading="lazy"

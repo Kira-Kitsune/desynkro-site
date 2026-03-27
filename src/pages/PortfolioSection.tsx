@@ -14,8 +14,8 @@ const PortfolioSection: Component<Props> = ({ folder, title }) => {
         <Show
             when={folder.length > 0}
             fallback={
-                <div class="mt-[5.625rem] flex w-full flex-col text-xl text-neutral-100">
-                    <div class="z-10 flex h-[80vh] w-full flex-col items-center justify-center gap-4 bg-gradient-to-b from-[#002b39] to-[#021c23] px-4 pt-24 pb-12 text-center text-3xl shadow-desynkro">
+                <div class="mt-22.5 flex w-full flex-col text-xl text-neutral-100">
+                    <div class="z-10 flex h-[80vh] w-full flex-col items-center justify-center gap-4 bg-linear-to-b from-[#002b39] to-[#021c23] px-4 pt-24 pb-12 text-center text-3xl shadow-desynkro">
                         Nothing here yet
                         <TextButton
                             text="Go Back"
@@ -26,10 +26,10 @@ const PortfolioSection: Component<Props> = ({ folder, title }) => {
                 </div>
             }
         >
-            <div class="mt-[5.625rem] flex w-full flex-col text-xl text-neutral-100">
+            <div class="mt-22.5 flex w-full flex-col text-xl text-neutral-100">
                 <Show when={src()}>
                     <div
-                        class="fixed z-[200] flex h-full w-full scale-[1.25] items-center justify-center bg-black bg-opacity-40 pb-[2.8125rem] lg:scale-[2.5]"
+                        class="fixed z-200 flex h-full w-full scale-[1.25] items-center justify-center bg-black/40 pb-11.25 lg:scale-[2.5]"
                         onClick={() => setSrc(undefined)}
                     >
                         <PortfolioItem
@@ -43,7 +43,7 @@ const PortfolioSection: Component<Props> = ({ folder, title }) => {
                         />
                     </div>
                 </Show>
-                <div class="z-30 flex w-full flex-col items-center justify-center gap-8 bg-gradient-to-b from-[#002b39] to-[#021c23] bg-bottom p-4 text-center text-3xl shadow-desynkro max-md:flex-col md:gap-0 md:p-16">
+                <div class="z-30 flex w-full flex-col items-center justify-center gap-8 bg-linear-to-b from-[#002b39] to-[#021c23] bg-bottom p-4 text-center text-3xl shadow-desynkro max-md:flex-col md:gap-0 md:p-16">
                     <div class="flex flex-col py-8 text-5xl">
                         {title}
                         <div class="text-3xl">

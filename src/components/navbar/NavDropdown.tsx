@@ -20,7 +20,7 @@ const NavDropdown: Component<Props> = ({ socials }) => {
                 <NavButtton href="#" text="Socials" />
             </div>
             <div
-                class={`absolute z-40 hidden w-full flex-col items-center justify-center gap-6 bg-nav py-8 px-[1.875rem] shadow-2xl group-hover:flex ${
+                class={`absolute z-40 hidden w-full flex-col items-center justify-center gap-6 bg-nav py-8 px-7.5 shadow-2xl group-hover:flex ${
                     isDropdownOpen() ? 'touch-screen' : 'hidden'
                 }`}
             >

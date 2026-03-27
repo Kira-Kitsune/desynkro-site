@@ -17,7 +17,7 @@ const Navbar: Component = () => {
 
     return (
         <>
-            <header class="fixed bottom-0 top-0 z-50 flex h-[5.625rem] w-full items-center bg-nav px-10 shadow-desynkro">
+            <header class="fixed bottom-0 top-0 z-50 flex h-22.5 w-full items-center bg-nav px-10 shadow-desynkro">
                 <img
                     src={Logo}
                     height={76}
@@ -53,7 +53,7 @@ const Navbar: Component = () => {
                 </nav>
             </header>
             <Show when={isMenuOpen()}>
-                <div class="flex fixed z-40 h-full w-full flex-col items-center gap-6 bg-neutral-800 bg-opacity-80 pt-36 text-lg md:hidden">
+                <div class="flex fixed z-40 h-full w-full flex-col items-center gap-6 bg-neutral-800/80 pt-36 text-lg md:hidden">
                     <For each={NavItems}>
                         {({ text, href }) => (
                             <div onClick={menuToggleHandler}>
